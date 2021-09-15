@@ -1,0 +1,44 @@
+.Pokemon {
+	display: block;
+	background-color: lightgrey;
+	border-radius: 10px;
+	border: 1px solid purple;
+	width: 180px;
+	position: relative;
+	transition: all 0.5s ease;
+	overflow: hidden;
+	height: 250px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: purple;
+		box-shadow: 0px 0px 11px 2px purple;
+	}
+
+	&__TextWrapper {
+		background: linear-gradient(rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.5) 85%);
+
+		height: 80px;
+		transition: 0.5s all ease;
+		display: flex;
+		padding-left: 10px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__Name {
+		color: white;
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+
+	&__Types {
+		color: whitesmoke;
+		font-size: 12px;
+	}
+
+	&__Image {
+		width: 180px;
+		height: 200px;
+	}
+}

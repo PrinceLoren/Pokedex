@@ -1,0 +1,162 @@
+.PokemonItem {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: auto;
+	height: auto;
+	grid-template-rows: auto;
+	margin: 50px 25px;
+	padding: 20px 0;
+	background: #fff;
+	transition: all 0.5s ease;
+	border-radius: 10px;
+	border: 2px solid purple;
+
+	&:hover {
+		box-shadow: 0px 0px 11px 3px purple;
+	}
+
+	&__Image {
+		justify-self: center;
+		margin: 10px 10px;
+	}
+
+	&__Button {
+		color: white;
+		background: purple;
+		border: none;
+		width: 50px;
+		height: 40px;
+		border-radius: 10px;
+		grid-column: 1 / 1;
+		transition: all 0.3s ease;
+
+		font-size: 13px;
+
+		&:hover {
+			box-shadow: 0px 0px 2px 1px purple;
+		}
+	}
+
+	&__Description {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	&__Name {
+		justify-self: center;
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	&__Types {
+		justify-self: center;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	&__LaneCp {
+		border: 1px solid orange;
+		justify-self: baseline;
+		margin: 10px auto;
+		padding: 5px 10px;
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 3px 1px orange;
+		}
+	}
+
+	&__LaneCp span {
+		position: static;
+		text-align: center;
+		margin: 5px 0;
+		padding: 5px 1px;
+	}
+
+	&__LaneCp::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 150px;
+		background: orange;
+		height: 15px;
+		position: relative;
+		margin-right: 15px;
+		padding-bottom: 5px;
+		border-radius: 20px;
+	}
+
+	&__LaneHp {
+		border: 1px solid green;
+		justify-self: baseline;
+		margin: 10px auto;
+		padding: 5px 10px;
+
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 3px 1px green;
+		}
+	}
+
+	&__LaneHp span {
+		position: static;
+		text-align: center;
+		margin: 5px 0;
+		padding: 5px 1px;
+	}
+
+	&__LaneHp::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 150px;
+		background: green;
+		height: 15px;
+		position: relative;
+		margin-right: 15px;
+		padding-bottom: 5px;
+		border-radius: 20px;
+	}
+
+	&__Weight {
+		justify-self: center;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__MinMax {
+		border: 1px solid purple;
+		justify-self: center;
+		margin: 10px auto;
+		padding: 5px 10px;
+		font-size: 18px;
+
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 3px 1px purple;
+		}
+	}
+
+	&__Height {
+		justify-self: center;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__MaxMin {
+		border: 1px solid purple;
+		justify-self: center;
+		margin: 10px auto;
+		padding: 5px 10px;
+		font-size: 18px;
+
+		transition: all 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 3px 1px purple;
+		}
+	}
+}

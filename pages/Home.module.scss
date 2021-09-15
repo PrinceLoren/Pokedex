@@ -1,0 +1,39 @@
+.Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: 100vh;
+
+	&__Wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 50px;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+	}
+
+	&__Card {
+		cursor: pointer;
+		width: 300px;
+		height: 100px;
+		background-color: purple;
+		padding: 25px;
+		margin: 10px;
+		box-sizing: border-box;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.034), 0 6px 6px rgba(0, 0, 0, 0.048);
+		border-radius: 7px;
+		display: inline-block;
+		font-size: 30px;
+		text-align: center;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			box-shadow: 0 8px 8px rgba(0, 0, 0, 0.034),
+				0 12px 12px rgba(0, 0, 0, 0.048);
+		}
+	}
+}
